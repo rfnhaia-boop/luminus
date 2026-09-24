@@ -101,12 +101,20 @@
 
             return (
                 <div className="relative w-full h-full flex flex-col items-center justify-between overflow-hidden">
-                    {/* Background Layer com Parallax */}
+                    {/* Background Layer Mobile */}
                     <motion.div 
                         animate={{ scale: selectedPost !== null ? 1.05 : 1 }}
                         transition={{ duration: 1.5, ease: "easeInOut" }}
-                        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-                        style={{ backgroundImage: `url('bg-clean.jpg')` }}
+                        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat lg:hidden"
+                        style={{ backgroundImage: `url('bg-mobile.jpg')` }}
+                    />
+                    
+                    {/* Background Layer Desktop */}
+                    <motion.div 
+                        animate={{ scale: selectedPost !== null ? 1.05 : 1 }}
+                        transition={{ duration: 1.5, ease: "easeInOut" }}
+                        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat hidden lg:block"
+                        style={{ backgroundImage: `url('bg-luminus.jpg')` }}
                     />
                     
                     {/* Ambient Light / Oclusão */}
