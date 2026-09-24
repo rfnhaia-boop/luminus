@@ -179,7 +179,7 @@
 
                                     <div 
                                         ref={scrollRef}
-                                        className="w-full flex flex-row lg:justify-center items-center gap-6 lg:gap-12 overflow-x-auto snap-x snap-mandatory scroll-hidden px-12 lg:px-0 py-8"
+                                        className="w-full flex flex-row lg:justify-center items-center gap-6 lg:gap-6 overflow-x-auto snap-x snap-mandatory scroll-hidden px-12 lg:px-12 py-8"
                                     >
                                         {posts.map((post, idx) => (
                                             <motion.div
@@ -192,7 +192,7 @@
                                                 className="relative group cursor-pointer snap-center shrink-0"
                                             >
                                                 <div className="p-2 glass-panel rounded-2xl transition-all duration-500 group-hover:neon-glow group-hover:border-cyan-500/30">
-                                                    <div className="relative overflow-hidden rounded-xl w-[260px] h-[340px] lg:w-[300px] lg:h-[380px] bg-black/40 flex items-center justify-center">
+                                                    <div className="relative overflow-hidden rounded-xl w-[260px] h-[340px] lg:w-[270px] lg:h-[350px] bg-black/40 flex items-center justify-center">
                                                         <img 
                                                             src={post.type === 'image' ? post.src : post.images[0]} 
                                                             className="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"
